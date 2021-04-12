@@ -8,7 +8,7 @@ import Business.EcoSystem;
 
 import Business.Organization;
 import Business.UserAccount.UserAccount;
-import userinterface.RestaurantAdminRole.AdminWorkAreaJPanel;
+import userinterface.CompanyAdminRole.AdminWorkAreaJPanel;
 import javax.swing.JPanel;
 import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 

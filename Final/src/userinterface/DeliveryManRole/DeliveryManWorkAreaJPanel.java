@@ -59,6 +59,8 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             if(order1.getStatus()==5) status = "Completed";
             if(order1.getStatus()==6) status = "Declined";
             if(order1.getStatus()==8) status = "Pending Enter";
+            if(order1.getStatus()==9) status = "Pending Out";
+            if(order1.getStatus()==10) status = "Enter Denied";
             Object[] row = new Object[5];
             row[0] = order1;
             row[1] = order1.getCompany().getName();

@@ -43,6 +43,7 @@ public class CustomerAdminJPanel extends javax.swing.JPanel {
         manageOrganizationJButton = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         enterpriseLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         manageEmployeeJButton.setText("Write Comments");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -64,6 +65,13 @@ public class CustomerAdminJPanel extends javax.swing.JPanel {
         enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel1.setText("Welcome");
 
+        jButton1.setText("I Have Some Problems");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -77,7 +85,8 @@ public class CustomerAdminJPanel extends javax.swing.JPanel {
                         .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+                        .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(295, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -91,7 +100,9 @@ public class CustomerAdminJPanel extends javax.swing.JPanel {
                 .addComponent(manageOrganizationJButton)
                 .addGap(45, 45, 45)
                 .addComponent(manageEmployeeJButton)
-                .addContainerGap(393, Short.MAX_VALUE))
+                .addGap(47, 47, 47)
+                .addComponent(jButton1)
+                .addContainerGap(323, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -109,10 +120,19 @@ public class CustomerAdminJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer); 
     }//GEN-LAST:event_manageOrganizationJButtonActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        ProblemAreaJpanel pbaj = new ProblemAreaJpanel(userProcessContainer,userAccount,ecosystem);
+        userProcessContainer.add("pbaj", pbaj);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer); 
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel enterpriseLabel1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton manageEmployeeJButton;
     private javax.swing.JButton manageOrganizationJButton;
     // End of variables declaration//GEN-END:variables

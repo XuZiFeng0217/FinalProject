@@ -113,7 +113,11 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                     order.setStatus(8);
                     
                 }
-            }
+            }}
+        else if(jComboBox1.getSelectedItem().equals("Request For Delivery")){
+                    order.setStatus(9);
+                    
+           
         }else if(jComboBox1.getSelectedItem().equals("Complete")){
             order.setStatus(5);
             JOptionPane.showMessageDialog(null, "You have conpleted an order!", "Warning", JOptionPane.WARNING_MESSAGE);

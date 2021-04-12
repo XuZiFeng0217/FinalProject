@@ -7,9 +7,6 @@ package userinterface.CustomerRole;
 import Business.Company.Company;
 import Business.EcoSystem;
 import Business.Order.Order;
-import Business.Restaurant.Product;
-import Business.Restaurant.Restaurant;
-
 import Business.UserAccount.UserAccount;
 import Business.Vehicle.Vehicle;
 import java.awt.CardLayout;

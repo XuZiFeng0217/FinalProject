@@ -8,8 +8,6 @@ package Business.Order;
 import Business.Company.Company;
 import Business.Customer.Customer;
 import Business.DeliveryMan.DeliveryMan;
-import Business.Restaurant.Product;
-import Business.Restaurant.Restaurant;
 import Business.UserAccount.UserAccount;
 import Business.Vehicle.Vehicle;
 import Bussiness.Warehouse.WareHouse;

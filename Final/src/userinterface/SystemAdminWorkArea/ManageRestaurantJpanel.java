@@ -5,8 +5,7 @@
  */
 package userinterface.SystemAdminWorkArea;
 
-import Business.Restaurant.Restaurant;
-import Business.Restaurant.RestaurantDirectory;
+
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -23,10 +22,10 @@ public class ManageRestaurantJpanel extends javax.swing.JPanel {
      */
     int flag = 0;
     private JPanel userProcessContainer;
-    private RestaurantDirectory restaurantDirectory;
-    public ManageRestaurantJpanel(JPanel userProcessContainer,RestaurantDirectory restaurantDirectory) {
+    
+    public ManageRestaurantJpanel(JPanel userProcessContainer) {
         initComponents();
-        this.restaurantDirectory = restaurantDirectory;
+        
         this.userProcessContainer = userProcessContainer;
         
         NameField.setEnabled(false);
@@ -222,47 +221,47 @@ public class ManageRestaurantJpanel extends javax.swing.JPanel {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         //flag=1新增对象
-        if(flag==1){
-            String name = NameField.getText();
-            String address = AddressField.getText();
-            String manager = ManagerField.getText();
-            Restaurant restaurant = new Restaurant(name,address,manager);
-            restaurantDirectory.add(restaurant);
-            populateTable();
-        }
-        //flag=2修改对象
-        else if(flag==2){
-            int selectedRowIndex = tblRestaurant.getSelectedRow();
-
-            if (selectedRowIndex < 0) {
-                JOptionPane.showMessageDialog(null, "Please select a row from the table first", "Warning", JOptionPane.WARNING_MESSAGE);
-                return;
-            }
-            Restaurant restaurant = (Restaurant) tblRestaurant.getValueAt(selectedRowIndex, 0);
-            restaurant.setName(NameField.getText());
-            restaurant.setAddress(AddressField.getText());
-            restaurant.setManager(ManagerField.getText());
-            populateTable();
-        }
-        JOptionPane.showMessageDialog(null, "Success", "Warning", JOptionPane.WARNING_MESSAGE);
+//        if(flag==1){
+//            String name = NameField.getText();
+//            String address = AddressField.getText();
+//            String manager = ManagerField.getText();
+//            Restaurant restaurant = new Restaurant(name,address,manager);
+//            restaurantDirectory.add(restaurant);
+//            populateTable();
+//        }
+//        //flag=2修改对象
+//        else if(flag==2){
+//            int selectedRowIndex = tblRestaurant.getSelectedRow();
+//
+//            if (selectedRowIndex < 0) {
+//                JOptionPane.showMessageDialog(null, "Please select a row from the table first", "Warning", JOptionPane.WARNING_MESSAGE);
+//                return;
+//            }
+//            Restaurant restaurant = (Restaurant) tblRestaurant.getValueAt(selectedRowIndex, 0);
+//            restaurant.setName(NameField.getText());
+//            restaurant.setAddress(AddressField.getText());
+//            restaurant.setManager(ManagerField.getText());
+//            populateTable();
+//        }
+//        JOptionPane.showMessageDialog(null, "Success", "Warning", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        flag = 2;
-        int selectedRowIndex = tblRestaurant.getSelectedRow();
-
-        if (selectedRowIndex < 0) {
-            JOptionPane.showMessageDialog(null, "Please select a row from the table first", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        Restaurant restaurant = (Restaurant) tblRestaurant.getValueAt(selectedRowIndex, 0);
-        NameField.setEnabled(true);
-        AddressField.setEnabled(true);
-        ManagerField.setEnabled(true);
-        NameField.setText(restaurant.getName());
-        AddressField.setText(restaurant.getAddress());
-        ManagerField.setText(restaurant.getManager());
+//        flag = 2;
+//        int selectedRowIndex = tblRestaurant.getSelectedRow();
+//
+//        if (selectedRowIndex < 0) {
+//            JOptionPane.showMessageDialog(null, "Please select a row from the table first", "Warning", JOptionPane.WARNING_MESSAGE);
+//            return;
+//        }
+//        Restaurant restaurant = (Restaurant) tblRestaurant.getValueAt(selectedRowIndex, 0);
+//        NameField.setEnabled(true);
+//        AddressField.setEnabled(true);
+//        ManagerField.setEnabled(true);
+//        NameField.setText(restaurant.getName());
+//        AddressField.setText(restaurant.getAddress());
+//        ManagerField.setText(restaurant.getManager());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -283,29 +282,29 @@ public class ManageRestaurantJpanel extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         int selectedRowIndex = tblRestaurant.getSelectedRow();
-
-        if (selectedRowIndex < 0) {
-            JOptionPane.showMessageDialog(null, "Please select a row from the table first", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        Restaurant restaurant = (Restaurant) tblRestaurant.getValueAt(selectedRowIndex, 0);
-        restaurantDirectory.remove(restaurant);
-        populateTable();
-        JOptionPane.showMessageDialog(null, "Success", "Warning", JOptionPane.WARNING_MESSAGE);
+//
+//        if (selectedRowIndex < 0) {
+//            JOptionPane.showMessageDialog(null, "Please select a row from the table first", "Warning", JOptionPane.WARNING_MESSAGE);
+//            return;
+//        }
+//        Restaurant restaurant = (Restaurant) tblRestaurant.getValueAt(selectedRowIndex, 0);
+//        restaurantDirectory.remove(restaurant);
+//        populateTable();
+//        JOptionPane.showMessageDialog(null, "Success", "Warning", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jButton2ActionPerformed
     private void populateTable() {
-        DefaultTableModel model = (DefaultTableModel) tblRestaurant.getModel();
-        model.setRowCount(0);
-        
-        for (Restaurant restaurant : restaurantDirectory.getRestaurantList()){
-            Object[] row = new Object[3];
-            row[0] = restaurant;
-            row[1] = restaurant.getAddress();
-            row[2] = restaurant.getManager();
-            
-            model.addRow(row);
-            
-        }
+//        DefaultTableModel model = (DefaultTableModel) tblRestaurant.getModel();
+//        model.setRowCount(0);
+//        
+//        for (Restaurant restaurant : restaurantDirectory.getRestaurantList()){
+//            Object[] row = new Object[3];
+//            row[0] = restaurant;
+//            row[1] = restaurant.getAddress();
+//            row[2] = restaurant.getManager();
+//            
+//            model.addRow(row);
+//            
+//        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

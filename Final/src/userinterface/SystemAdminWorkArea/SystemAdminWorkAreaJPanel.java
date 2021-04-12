@@ -10,7 +10,6 @@ import Business.DeliveryMan.DeliveryMan;
 import Business.EcoSystem;
 
 import Business.Organization;
-import Business.Restaurant.Restaurant;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,51 +35,51 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.ecosystem=ecosystem;
-        populateTree();
+        //populateTree();
        
     }
     
-    public void populateTree(){
-        
-        DefaultTreeModel model=(DefaultTreeModel)jTree.getModel();
-        List<Customer> customerList = ecosystem.getCustomerDirectory().getCustomerList();
-        DefaultMutableTreeNode customers = new DefaultMutableTreeNode("Cutomers");
-        DefaultMutableTreeNode root=(DefaultMutableTreeNode)model.getRoot();
-        root.removeAllChildren();
-        root.insert(customers, 0);
-        Customer customer;
-        DefaultMutableTreeNode customerNode;
-        for(int i=0;i<customerList.size();i++){
-            customer = customerList.get(i);
-            customerNode=new DefaultMutableTreeNode(customer.getFirstName()+customer.getLastName());
-            customers.insert(customerNode, i);
-        }
-        
-        List<DeliveryMan> deliveryManList = ecosystem.getDeliveryManDirectory().getDeliveryManList();
-        DefaultMutableTreeNode deliveryMans = new DefaultMutableTreeNode("DeliveryMen");
-        root.insert(deliveryMans, 0);
-        DeliveryMan deliveryMan;
-        DefaultMutableTreeNode deliveryManNode;
-        for(int i=0;i<deliveryManList.size();i++){
-            deliveryMan = deliveryManList.get(i);
-            deliveryManNode=new DefaultMutableTreeNode(deliveryMan.getFirstName()+deliveryMan.getLastName());
-            deliveryMans.insert(deliveryManNode, i);
-        }
-        
-        List<Restaurant> restaurantList = ecosystem.getRestaurantDirectory().getRestaurantList();
-        DefaultMutableTreeNode restaurants = new DefaultMutableTreeNode("Restaurant");
-        root.insert(restaurants, 0);
-        Restaurant restaurant;
-        DefaultMutableTreeNode restaurantNode;
-        for(int i=0;i<restaurantList.size();i++){
-            restaurant = restaurantList.get(i);
-            restaurantNode=new DefaultMutableTreeNode(restaurant.getName());
-            restaurants.insert(restaurantNode, i);
-        }
-        
-        
-        model.reload();
-    }
+//    public void populateTree(){
+//        
+//        DefaultTreeModel model=(DefaultTreeModel)jTree.getModel();
+//        List<Customer> customerList = ecosystem.getCustomerDirectory().getCustomerList();
+//        DefaultMutableTreeNode customers = new DefaultMutableTreeNode("Cutomers");
+//        DefaultMutableTreeNode root=(DefaultMutableTreeNode)model.getRoot();
+//        root.removeAllChildren();
+//        root.insert(customers, 0);
+//        Customer customer;
+//        DefaultMutableTreeNode customerNode;
+//        for(int i=0;i<customerList.size();i++){
+//            customer = customerList.get(i);
+//            customerNode=new DefaultMutableTreeNode(customer.getFirstName()+customer.getLastName());
+//            customers.insert(customerNode, i);
+//        }
+//        
+//        List<DeliveryMan> deliveryManList = ecosystem.getDeliveryManDirectory().getDeliveryManList();
+//        DefaultMutableTreeNode deliveryMans = new DefaultMutableTreeNode("DeliveryMen");
+//        root.insert(deliveryMans, 0);
+//        DeliveryMan deliveryMan;
+//        DefaultMutableTreeNode deliveryManNode;
+//        for(int i=0;i<deliveryManList.size();i++){
+//            deliveryMan = deliveryManList.get(i);
+//            deliveryManNode=new DefaultMutableTreeNode(deliveryMan.getFirstName()+deliveryMan.getLastName());
+//            deliveryMans.insert(deliveryManNode, i);
+//        }
+//        
+//        List<Restaurant> restaurantList = ecosystem.getRestaurantDirectory().getRestaurantList();
+//        DefaultMutableTreeNode restaurants = new DefaultMutableTreeNode("Restaurant");
+//        root.insert(restaurants, 0);
+//        Restaurant restaurant;
+//        DefaultMutableTreeNode restaurantNode;
+//        for(int i=0;i<restaurantList.size();i++){
+//            restaurant = restaurantList.get(i);
+//            restaurantNode=new DefaultMutableTreeNode(restaurant.getName());
+//            restaurants.insert(restaurantNode, i);
+//        }
+//        
+//        
+//        model.reload();
+//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -212,10 +211,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnManageNetworkActionPerformed
 
     private void btnManageEnterpriseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageEnterpriseActionPerformed
-        ManageRestaurantJpanel mrjp = new ManageRestaurantJpanel(userProcessContainer,ecosystem.getRestaurantDirectory());
-        userProcessContainer.add("mrjp", mrjp);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer); 
+        //ManageRestaurantJpanel mrjp = new ManageRestaurantJpanel(userProcessContainer,ecosystem.getRestaurantDirectory());
+//        userProcessContainer.add("mrjp", mrjp);
+//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+//        layout.next(userProcessContainer); 
     }//GEN-LAST:event_btnManageEnterpriseActionPerformed
 
     private void btnManageAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageAdminActionPerformed
@@ -235,7 +234,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        populateTree();
+        //populateTree();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 

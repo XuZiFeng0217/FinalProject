@@ -11,7 +11,7 @@ import Business.Company.CompanyDirectory;
 import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Order.Order;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Problem.Problem;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
 import Bussiness.Warehouse.WareHouse;
@@ -25,21 +25,22 @@ import java.util.List;
 public class EcoSystem extends Organization{
     
     private static EcoSystem business;
-    private RestaurantDirectory restaurantDirectory;
+    
     private CustomerDirectory customerDirectory;
     private DeliveryManDirectory deliveryManDirectory;
     private List<Order> orderDirectory;
     private List<Company> companyDirectory;
     private List<WareHouse> wareHouseDirectory;
+    private List<Problem> problemDirectory;
+    public EcoSystem(CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory,List<Order> orderDirectory,List<Company> companyDirectory,List<WareHouse> wareHouseDirectory,List<Problem> problemDirectory) {
 
-    public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory,List<Order> orderDirectory,List<Company> companyDirectory,List<WareHouse> wareHouseDirectory) {
-
-        this.restaurantDirectory = restaurantDirectory;
+        
         this.customerDirectory = customerDirectory;
         this.deliveryManDirectory = deliveryManDirectory;
         this.orderDirectory = orderDirectory;
         this.companyDirectory = companyDirectory;
         this.wareHouseDirectory = wareHouseDirectory;
+        this.problemDirectory = problemDirectory;
     }
     
     public static EcoSystem getInstance(){
@@ -74,13 +75,7 @@ public class EcoSystem extends Organization{
         EcoSystem.business = business;
     }
 
-    public RestaurantDirectory getRestaurantDirectory() {
-        return restaurantDirectory;
-    }
 
-    public void setRestaurantDirectory(RestaurantDirectory restaurantDirectory) {
-        this.restaurantDirectory = restaurantDirectory;
-    }
 
     public CustomerDirectory getCustomerDirectory() {
         return customerDirectory;
@@ -121,6 +116,16 @@ public class EcoSystem extends Organization{
     public void setWareHouseDirectory(List<WareHouse> wareHouseDirectory) {
         this.wareHouseDirectory = wareHouseDirectory;
     }
+
+    public List<Problem> getProblemDirectory() {
+        return problemDirectory;
+    }
+
+    public void setProblemDirectory(List<Problem> problemDirectory) {
+        this.problemDirectory = problemDirectory;
+    }
+    
+    
     
     
     

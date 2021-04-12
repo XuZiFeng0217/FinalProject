@@ -7,7 +7,6 @@ package userinterface.CustomerRole;
 import Business.EcoSystem;
 import Business.Order.Order;
 import Business.Organization;
-import Business.Restaurant.Restaurant;
 import Business.UserAccount.UserAccount;
 
 import java.awt.CardLayout;
@@ -48,17 +47,27 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         List<Order> allOrders = ecosystem.getOrderDirectory();
         List<Order> newOrders = new ArrayList<>();
         for(Order order : allOrders){
-            if(order.getCustomer()==userAccount){
+            if(order.getCustomer()==userAccount&&order.getStatus()==5){
                 newOrders.add(order);
             }
         }
 
         for (Order order : newOrders){
+            String status = null;
+            if(order.getStatus()==1) status = "Awaiting Response";
+            if(order.getStatus()==2) status = "Awaiting Delivery";
+            if(order.getStatus()==3) status = "In The WareHouse";
+            if(order.getStatus()==4) status = "In Transit";
+            if(order.getStatus()==5) status = "Completed";
+            if(order.getStatus()==6) status = "Declined";
+            if(order.getStatus()==8) status = "Pending Enter";
+            if(order.getStatus()==9) status = "Pending Out";
+            if(order.getStatus()==10) status = "Enter Denied";
             Object[] row = new Object[5];
             row[0] = order;
             row[1] = order.getCompany().getName();
             row[2] = order.getTotal();
-            row[3] = order.getStatus();
+            row[3] = status;
             row[4] = order.getComment();
             
             model.addRow(row);
