@@ -87,7 +87,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, -1, -1));
 
         enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel1.setText("Restaurant :");
+        enterpriseLabel1.setText("Company :");
         add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 120, 30));
     }// </editor-fold>//GEN-END:initComponents
 

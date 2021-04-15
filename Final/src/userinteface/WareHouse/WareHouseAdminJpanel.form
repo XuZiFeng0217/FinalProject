@@ -29,7 +29,7 @@
                       <Component id="manageEmployeeJButton" alignment="0" pref="150" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="332" max="32767" attributes="0"/>
+              <EmptySpace pref="505" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

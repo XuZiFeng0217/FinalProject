@@ -11,6 +11,7 @@ import Business.Problem.Problem;
 
 import Business.Role.AdminRole;
 import Business.Role.CompanyAdminRole;
+import Business.Role.CompanyDataRole;
 import Business.Role.CustomerRole;
 import Business.Role.DeliverManRole;
 import Business.Role.ServiceRole;
@@ -63,6 +64,9 @@ public class ConfigureASystem {
         UserAccount whc = system.getUserAccountDirectory().createUserAccount("wh3", "123", new WareHouseAdminRole());
         //设置客服账户
         UserAccount s1 = system.getUserAccountDirectory().createUserAccount("s1", "123", new ServiceRole());
+        
+        //设置公司数据管理员
+        UserAccount cd1 = system.getUserAccountDirectory().createUserAccount("cd1", "123", new CompanyDataRole());
         //初始化customer数据
         Customer c1 = new Customer(1,"Jack","Smith");
         Customer c2 = new Customer(2,"Jack","Smith");
