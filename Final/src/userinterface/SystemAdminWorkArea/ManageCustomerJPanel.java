@@ -273,16 +273,21 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         int selectedRowIndex = tblCutomers.getSelectedRow();
-
-        if (selectedRowIndex < 0) {
-            JOptionPane.showMessageDialog(null, "Please select a row from the table first", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
+        int count = tblCutomers.getSelectedRowCount();
+        if(count == 1){
+            if (selectedRowIndex >= 0) {
+            int selectionButton = JOptionPane.YES_NO_OPTION;
+            int selectionResult = JOptionPane.showConfirmDialog(null, "Sure to delete?", "Warning", selectionButton);
+            if (selectionResult == JOptionPane.YES_OPTION) {
+                Customer c1 = (Customer) tblCutomers.getValueAt(selectedRowIndex, 0);
+                customerDirectory.removeCutomer(c1);
+                populateTable();
+            }
         }
-        Customer c1 = (Customer) tblCutomers.getValueAt(selectedRowIndex, 0);
-        customerDirectory.removeCutomer(c1);
-        JOptionPane.showMessageDialog(null, "Success", "Warning", JOptionPane.WARNING_MESSAGE);
-        populateTable();
-        
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "Please select a row!!");
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
