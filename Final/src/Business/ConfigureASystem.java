@@ -17,6 +17,7 @@ import Business.Role.DeliverManRole;
 import Business.Role.ServiceRole;
 import Business.Role.SystemAdminRole;
 import Business.Role.WareHouseAdminRole;
+import Business.Role.WareHouseDataRole;
 import Business.UserAccount.UserAccount;
 import Business.Vehicle.Vehicle;
 import Bussiness.Warehouse.WareHouse;
@@ -69,8 +70,13 @@ public class ConfigureASystem {
         UserAccount cd1 = system.getUserAccountDirectory().createUserAccount("cd1", "123", new CompanyDataRole());
         UserAccount cd2 = system.getUserAccountDirectory().createUserAccount("cd2", "123", new CompanyDataRole());
         UserAccount cd3 = system.getUserAccountDirectory().createUserAccount("cd3", "123", new CompanyDataRole());
-        
+        //初始化系统数据管理员
         UserAccount ad1 = system.getUserAccountDirectory().createUserAccount("ad1", "123", new AdminDataRole());
+        //初始化仓库数据管理员
+        UserAccount wd1 = system.getUserAccountDirectory().createUserAccount("wd1", "123", new WareHouseDataRole());
+        UserAccount wd2 = system.getUserAccountDirectory().createUserAccount("wd2", "123", new WareHouseDataRole());
+        UserAccount wd3 = system.getUserAccountDirectory().createUserAccount("wd3", "123", new WareHouseDataRole());
+        
         //初始化customer数据
         Customer c1 = new Customer(1,"Jack","Smith");
         Customer c2 = new Customer(2,"Jack","Smith");

@@ -9,6 +9,7 @@ import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinteface.WareHouse.WareHouseAdminJpanel;
+import userinterface.WareHouseDataRole.WareHouseDataJpanel;
 
 /**
  *
@@ -18,7 +19,7 @@ public class WareHouseDataRole extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem business) {
-        return new WareHouseAdminJpanel(userProcessContainer,account,business);  
+        return new WareHouseDataJpanel(userProcessContainer,account,business);  
     }
     
 }
