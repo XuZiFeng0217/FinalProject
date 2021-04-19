@@ -9,7 +9,7 @@ import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Order.Order;
 import Business.Problem.Problem;
 
-import Business.Role.AdminRole;
+import Business.Role.AdminDataRole;
 import Business.Role.CompanyAdminRole;
 import Business.Role.CompanyDataRole;
 import Business.Role.CustomerRole;
@@ -67,6 +67,10 @@ public class ConfigureASystem {
         
         //设置公司数据管理员
         UserAccount cd1 = system.getUserAccountDirectory().createUserAccount("cd1", "123", new CompanyDataRole());
+        UserAccount cd2 = system.getUserAccountDirectory().createUserAccount("cd2", "123", new CompanyDataRole());
+        UserAccount cd3 = system.getUserAccountDirectory().createUserAccount("cd3", "123", new CompanyDataRole());
+        
+        UserAccount ad1 = system.getUserAccountDirectory().createUserAccount("ad1", "123", new AdminDataRole());
         //初始化customer数据
         Customer c1 = new Customer(1,"Jack","Smith");
         Customer c2 = new Customer(2,"Jack","Smith");

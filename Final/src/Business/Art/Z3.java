@@ -1,11 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Business.Art;
 
+import Business.EcoSystem;
+import Business.Order.Order;
+import Business.UserAccount.UserAccount;
+import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Component;
 
 import java.awt.FontMetrics;
 
@@ -27,11 +28,15 @@ import java.util.ArrayList;
 
 import java.util.List;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 /**
  *
  * @author zzz
  */
 public class Z3 extends javax.swing.JPanel {
+    JPanel userProcessContainer;
+    UserAccount account;  
+    EcoSystem business;
     private double[] data; // 在饼图中显示的数据
 
     private Color[] defaultColors; // 预定义饼图的颜色
@@ -46,10 +51,63 @@ public class Z3 extends javax.swing.JPanel {
     private int selectedPieIndex = -1; // 鼠标点击是选中的Arc, -1为没有选中
 
     
-     public Z3() {
+     public Z3(JPanel userProcessContainer, UserAccount account, EcoSystem business) {
         initComponents();
-        data = new double[] { 30.0,20.0,50.0 };
-
+        this.userProcessContainer = userProcessContainer;
+        this.account = account;
+        this.business = business;
+        data = new double[3];
+        double ad1 = 0;
+        double ad2 = 0;
+        double ad3 = 0;
+        
+        if(account.getUsername().equals("cd1")){
+            for(Order order : business.getOrderDirectory()){
+                if(order.getCompany().getName().equals("SF")){
+                    if(order.getAddress().equals("Boston")){
+                        ad1 ++ ;
+                    }else if(order.getAddress().equals("New York")){
+                        ad2++;
+                    }else if(order.getAddress().equals("Washington")){
+                        ad3++;
+                    }
+                }
+            }
+        }
+        if(account.getUsername().equals("cd2")){
+            for(Order order : business.getOrderDirectory()){
+                if(order.getCompany().getName().equals("EXPRESS")){
+                    if(order.getAddress().equals("Boston")){
+                        ad1 ++ ;
+                    }else if(order.getAddress().equals("New York")){
+                        ad2++;
+                    }else if(order.getAddress().equals("Washington")){
+                        ad3++;
+                    }
+                }
+            }
+        }
+        if(account.getUsername().equals("cd3")){
+            for(Order order : business.getOrderDirectory()){
+                if(order.getCompany().getName().equals("UPS")){
+                    if(order.getAddress().equals("Boston")){
+                        ad1 ++ ;
+                    }else if(order.getAddress().equals("New York")){
+                        ad2++;
+                    }else if(order.getAddress().equals("Washington")){
+                        ad3++;
+                    }
+                }
+            }
+        }
+        double sum = ad1 + ad2 + ad3;
+        
+        ad1 = (double) Math.round(ad1/sum * 100);
+        ad2 = (double) Math.round(ad2/sum * 100);
+        ad3 = (double) Math.round(ad3/sum * 100);
+        if(ad1!=0) data[0] = ad1;
+        if(ad1!=0) data[1] = ad2;
+        if(ad1!=0) data[2] = ad3;
         defaultColors = createColors();
 
 
@@ -101,9 +159,9 @@ public class Z3 extends javax.swing.JPanel {
 
         List<Color> colors = new ArrayList<Color>();
 
-        colors.add(Color.decode("#FF7321"));
+        colors.add(Color.decode("#D0F15A"));
 
-        colors.add(Color.decode("#169800"));
+        colors.add(Color.decode("#AA6A2D"));
 
         colors.add(Color.decode("#00E500"));
 
@@ -397,19 +455,54 @@ public class Z3 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        backJButton = new javax.swing.JButton();
+
+        jLabel1.setText("Brown: NewYork    Yellow: Boston    Green: Washington");
+
+        backJButton.setText("<<Back");
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 781, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(backJButton)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addContainerGap(353, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 578, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(backJButton))
+                .addContainerGap(540, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+
+        userProcessContainer.remove(this);
+        Component[] componentArray = userProcessContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        //        CustomerAreaJPanel dwjp = (CustomerAreaJPanel) component;
+        //        dwjp.populateRequestTable();
+        CardLayout layout = (CardLayout)userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backJButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backJButton;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

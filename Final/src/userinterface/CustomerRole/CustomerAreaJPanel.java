@@ -365,7 +365,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         }
         ecosystem.getOrderDirectory().add(order);
-        System.out.println(ecosystem.getOrderDirectory());
+       
         JOptionPane.showMessageDialog(null, "You have made an order successfully!", "Warning", JOptionPane.WARNING_MESSAGE);
         
     }//GEN-LAST:event_jButton2ActionPerformed
