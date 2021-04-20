@@ -11,7 +11,6 @@ import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -137,7 +136,6 @@ public class WareHouseEnterJpanel extends javax.swing.JPanel {
         
         Order order = (Order)jTable1.getValueAt(selectedRow, 0);
         order.setStatus(3);
-        JOptionPane.showMessageDialog(null, "Success!", "Warning", JOptionPane.WARNING_MESSAGE);
         populateTable();
         
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -111,13 +111,11 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                     order.setWareHouse(wareHouse);
                     System.out.println(order.getWareHouse().getName());
                     order.setStatus(8);
-                    JOptionPane.showMessageDialog(null, "Success!", "Warning", JOptionPane.WARNING_MESSAGE);
                     
                 }
             }}
         else if(jComboBox1.getSelectedItem().equals("Request For Delivery")){
                     order.setStatus(9);
-                    JOptionPane.showMessageDialog(null, "Success!", "Warning", JOptionPane.WARNING_MESSAGE);
                     
            
         }else if(jComboBox1.getSelectedItem().equals("Complete")){
