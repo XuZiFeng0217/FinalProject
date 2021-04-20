@@ -114,6 +114,8 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jComboBox2 = new javax.swing.JComboBox<>();
         lblTitle3 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 206, 163));
+
         ProductTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -147,6 +149,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             ProductTable.getColumnModel().getColumn(2).setResizable(false);
         }
 
+        requestTestJButton.setBackground(new java.awt.Color(255, 255, 255));
+        requestTestJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        requestTestJButton.setForeground(new java.awt.Color(255, 132, 25));
         requestTestJButton.setText("Add To Cast");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,6 +159,8 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(103, 144, 247));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Check");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,7 +204,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblTitle.setText("My Cast");
 
-        lblTitle1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        lblTitle1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         lblTitle1.setText("Product List");
 
         sum.addActionListener(new java.awt.event.ActionListener() {
@@ -212,6 +219,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(250, 70, 75));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Submit");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -229,6 +239,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        backJButton.setBackground(new java.awt.Color(60, 117, 255));
+        backJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -253,14 +266,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                         .addGap(35, 35, 35)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(307, 307, 307)
-                        .addComponent(lblTitle1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(318, 318, 318)
                         .addComponent(lblTitle))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(98, 98, 98)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(backJButton)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -276,14 +286,14 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                                 .addGap(12, 12, 12)
                                 .addComponent(lblTitle3)
                                 .addGap(18, 18, 18)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(245, 245, 245)
+                        .addComponent(lblTitle1)))
                 .addContainerGap(130, Short.MAX_VALUE))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {SumPrice, jButton2});
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -314,7 +324,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                     .addComponent(lblTitle2)
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTitle3))
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -365,7 +375,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         }
         ecosystem.getOrderDirectory().add(order);
-       
+        System.out.println(ecosystem.getOrderDirectory());
         JOptionPane.showMessageDialog(null, "You have made an order successfully!", "Warning", JOptionPane.WARNING_MESSAGE);
         
     }//GEN-LAST:event_jButton2ActionPerformed

@@ -56,46 +56,52 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        userJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        userJButton.setBackground(new java.awt.Color(255, 206, 163));
+        userJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        userJButton.setForeground(new java.awt.Color(204, 103, 16));
         userJButton.setText("View Comments");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 190, -1));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, 190, -1));
 
-        manageEmployeeJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        manageEmployeeJButton.setBackground(new java.awt.Color(255, 206, 163));
+        manageEmployeeJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        manageEmployeeJButton.setForeground(new java.awt.Color(68, 118, 244));
         manageEmployeeJButton.setText("Manage menu");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 530, 190, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 550, 190, -1));
 
-        manageOrganizationJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        manageOrganizationJButton.setBackground(new java.awt.Color(255, 206, 163));
+        manageOrganizationJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        manageOrganizationJButton.setForeground(new java.awt.Color(255, 96, 102));
         manageOrganizationJButton.setText("Manage Orders");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 530, 190, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 550, 190, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, 120, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 120, 30));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel3.setText("Manage company information");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, -1, -1));
 
         enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel1.setText("Company :");
-        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 120, 30));
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, 120, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/company.gif"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 810, 420));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 810, 420));
     }// </editor-fold>//GEN-END:initComponents
 
     private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed
