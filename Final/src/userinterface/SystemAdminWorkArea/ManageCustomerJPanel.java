@@ -49,6 +49,7 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
         lblOrganizationList = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
+<<<<<<< Updated upstream
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -59,6 +60,11 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+=======
+        jLabel1 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(254, 102, 0));
+>>>>>>> Stashed changes
 
         tblCutomers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -94,9 +100,9 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
         lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         lblTitle.setText("Manage Customers");
 
-        btnBack.setBackground(new java.awt.Color(255, 181, 117));
+        btnBack.setBackground(new java.awt.Color(221, 98, 67));
         btnBack.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setForeground(new java.awt.Color(51, 51, 51));
         btnBack.setText("<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,6 +110,7 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< Updated upstream
         jButton1.setBackground(new java.awt.Color(255, 181, 117));
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -156,6 +163,9 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
+=======
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/view1.jpg"))); // NOI18N
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -164,12 +174,18 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< Updated upstream
                         .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+=======
+                        .addGap(162, 162, 162)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+>>>>>>> Stashed changes
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnBack)
-                                .addGap(113, 113, 113)
+                                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(103, 103, 103)
                                 .addComponent(lblTitle))
+<<<<<<< Updated upstream
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(259, 259, 259)
                                 .addComponent(jButton1)
@@ -192,10 +208,16 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
                                     .addGap(144, 144, 144)
                                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE))))
+=======
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(228, 228, 228)
+                                .addComponent(lblOrganizationList))))
+>>>>>>> Stashed changes
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(285, 285, 285)
-                        .addComponent(lblOrganizationList)))
-                .addContainerGap(538, Short.MAX_VALUE))
+                        .addGap(45, 45, 45)
+                        .addComponent(jLabel1)))
+                .addContainerGap(587, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2, jButton4});
@@ -203,15 +225,16 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addGap(114, 114, 114)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBack)
+                    .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTitle))
                 .addGap(52, 52, 52)
                 .addComponent(lblOrganizationList, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+<<<<<<< Updated upstream
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -231,6 +254,10 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
                 .addGap(43, 43, 43)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(97, Short.MAX_VALUE))
+=======
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -322,6 +349,7 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
+<<<<<<< Updated upstream
     private javax.swing.JTextField firstNameField;
     private javax.swing.JTextField idField;
     private javax.swing.JButton jButton1;
@@ -331,6 +359,9 @@ public class ManageCustomerJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+=======
+    private javax.swing.JLabel jLabel1;
+>>>>>>> Stashed changes
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField lastNameField;
     private javax.swing.JLabel lblOrganizationList;

@@ -3,6 +3,8 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/AbsoluteLayout.jar!/" />
       <root url="jar://$PROJECT_DIR$/db4o-8.0.184.15484-all-java5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/substance-6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/trident.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

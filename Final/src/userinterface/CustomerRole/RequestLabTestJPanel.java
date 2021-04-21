@@ -88,20 +88,21 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         jTable1 = new javax.swing.JTable();
         jTextField1 = new javax.swing.JTextField();
         backJButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 206, 163));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         requestTestJButton.setBackground(new java.awt.Color(250, 70, 75));
-        requestTestJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        requestTestJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        requestTestJButton.setForeground(new java.awt.Color(102, 102, 102));
         requestTestJButton.setText("Submit the Comment");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 420, -1, -1));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 570, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -116,25 +117,28 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 460, 190));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 460, 190));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 460, 30));
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 460, 30));
 
         backJButton.setBackground(new java.awt.Color(60, 117, 255));
-        backJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(102, 102, 102));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 90, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/comment.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 40, -1, 800));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
@@ -168,6 +172,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;

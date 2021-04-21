@@ -56,12 +56,19 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setBackground(new java.awt.Color(254, 102, 0));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Administor.jpg"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(255, 132, 25));
+        jButton1.setBackground(new java.awt.Color(221, 98, 67));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+<<<<<<< Updated upstream
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Administor Account Manage");
+=======
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
+        jButton1.setText("View Company");
+>>>>>>> Stashed changes
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,20 +76,30 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        customerBtn.setBackground(new java.awt.Color(255, 206, 163));
+        customerBtn.setBackground(new java.awt.Color(81, 119, 97));
         customerBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+<<<<<<< Updated upstream
         customerBtn.setForeground(new java.awt.Color(255, 255, 255));
         customerBtn.setText("Customer Account Manage");
+=======
+        customerBtn.setForeground(new java.awt.Color(51, 51, 51));
+        customerBtn.setText("View Customer");
+>>>>>>> Stashed changes
         customerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customerBtnActionPerformed(evt);
             }
         });
 
-        deliveryBtn.setBackground(new java.awt.Color(204, 204, 204));
+        deliveryBtn.setBackground(new java.awt.Color(0, 153, 153));
         deliveryBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+<<<<<<< Updated upstream
         deliveryBtn.setForeground(new java.awt.Color(255, 132, 25));
         deliveryBtn.setText("DeliveryMan Manage");
+=======
+        deliveryBtn.setForeground(new java.awt.Color(51, 51, 51));
+        deliveryBtn.setText("View WareHouse");
+>>>>>>> Stashed changes
         deliveryBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deliveryBtnActionPerformed(evt);
@@ -93,6 +110,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(121, 121, 121)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -102,12 +120,25 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addGap(104, 104, 104)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(131, Short.MAX_VALUE))
+=======
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(156, 156, 156)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(customerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(deliveryBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(182, 182, 182)
+                .addComponent(jLabel1)
+                .addContainerGap(337, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(168, 168, 168)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                         .addGap(147, 147, 147)
                         .addComponent(jButton1)
                         .addGap(38, 38, 38)
@@ -118,6 +149,16 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                         .addGap(29, 29, 29)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(169, Short.MAX_VALUE))
+=======
+                        .addGap(80, 80, 80)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(113, 113, 113)
+                        .addComponent(deliveryBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(111, 111, 111)
+                        .addComponent(customerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(226, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         add(jPanel1, java.awt.BorderLayout.CENTER);

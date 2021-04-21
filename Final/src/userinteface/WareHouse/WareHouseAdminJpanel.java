@@ -46,7 +46,15 @@ public class WareHouseAdminJpanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
+<<<<<<< Updated upstream
         manageOrganizationJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        setBackground(new java.awt.Color(254, 102, 0));
+
+        manageOrganizationJButton.setBackground(new java.awt.Color(255, 255, 0));
+        manageOrganizationJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        manageOrganizationJButton.setForeground(new java.awt.Color(51, 51, 51));
+>>>>>>> Stashed changes
         manageOrganizationJButton.setText("Manage The Enter");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,6 +62,7 @@ public class WareHouseAdminJpanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< Updated upstream
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("Welcome");
 
@@ -61,6 +70,19 @@ public class WareHouseAdminJpanel extends javax.swing.JPanel {
         enterpriseLabel1.setText("Welcome");
 
         manageEmployeeJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        enterpriseLabel.setForeground(new java.awt.Color(102, 102, 0));
+        enterpriseLabel.setText("Welcome");
+
+        enterpriseLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        enterpriseLabel1.setForeground(new java.awt.Color(102, 102, 0));
+        enterpriseLabel1.setText("Welcome");
+
+        manageEmployeeJButton.setBackground(new java.awt.Color(103, 144, 247));
+        manageEmployeeJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        manageEmployeeJButton.setForeground(new java.awt.Color(51, 51, 51));
+>>>>>>> Stashed changes
         manageEmployeeJButton.setText("Manage The Out");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,7 +92,12 @@ public class WareHouseAdminJpanel extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/cangku.gif"))); // NOI18N
 
+<<<<<<< Updated upstream
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+=======
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 0));
+>>>>>>> Stashed changes
         jLabel2.setText("Manage your warehouse");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -78,6 +105,7 @@ public class WareHouseAdminJpanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(97, 97, 97)
                 .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -97,23 +125,54 @@ public class WareHouseAdminJpanel extends javax.swing.JPanel {
                         .addGap(20, 20, 20)
                         .addComponent(jLabel1)))
                 .addContainerGap(70, Short.MAX_VALUE))
+=======
+                .addContainerGap(189, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(200, 200, 200)
+                        .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(360, 360, 360))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(214, 214, 214))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel2))
+                        .addGap(463, 463, 463))))
+>>>>>>> Stashed changes
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(18, 18, 18)
+=======
+                .addGap(66, 66, 66)
+>>>>>>> Stashed changes
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(enterpriseLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(43, 43, 43)
+                .addComponent(jLabel1)
+                .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+<<<<<<< Updated upstream
                     .addComponent(manageOrganizationJButton)
                     .addComponent(manageEmployeeJButton))
                 .addContainerGap(34, Short.MAX_VALUE))
+=======
+                    .addComponent(manageEmployeeJButton)
+                    .addComponent(manageOrganizationJButton))
+                .addContainerGap(102, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
     }// </editor-fold>//GEN-END:initComponents
 

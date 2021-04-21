@@ -87,6 +87,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         processJButton = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(254, 102, 0));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -128,23 +129,41 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(4).setPreferredWidth(160);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 500, 170));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 500, 170));
 
+<<<<<<< Updated upstream
+=======
+        processJButton.setBackground(new java.awt.Color(255, 255, 255));
+        processJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(255, 132, 25));
+>>>>>>> Stashed changes
         processJButton.setText("Process");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
         add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, -1, -1));
 
+=======
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 400, 110, -1));
+
+        jButton3.setBackground(new java.awt.Color(140, 123, 79));
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(51, 51, 51));
+>>>>>>> Stashed changes
         jButton3.setText("Refresh");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
+=======
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 400, 110, -1));
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
