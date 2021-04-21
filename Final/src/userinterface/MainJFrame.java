@@ -11,10 +11,7 @@ import Business.Organization;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Image;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
+import javax.swing.*;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -369,8 +366,16 @@ public class MainJFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+        MainJFrame.setDefaultLookAndFeelDecorated(true);
+        JDialog.setDefaultLookAndFeelDecorated(true);
         java.awt.EventQueue.invokeLater(new Runnable() {
+
             public void run() {
+                try {
+                    UIManager.setLookAndFeel("org.pushingpixels.substance.api.skin.SubstanceAutumnLookAndFeel");
+                } catch (Exception e) {
+                    System.out.println("Substance Graphite failed to initialize");
+                }
                 new MainJFrame().setVisible(true);
             }
         });
