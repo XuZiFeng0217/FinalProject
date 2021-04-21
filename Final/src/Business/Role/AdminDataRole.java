@@ -13,10 +13,7 @@ import javax.swing.JPanel;
 import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import userinterface.companyDataRole.DataWorkArea;
 
-/**
- *
- * @author raunak
- */
+
 public class AdminDataRole extends Role{
 
     @Override

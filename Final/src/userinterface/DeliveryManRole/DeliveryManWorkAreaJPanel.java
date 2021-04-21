@@ -15,10 +15,7 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author raunak
- */
+
 public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
@@ -163,7 +160,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         
         Order order = (Order)workRequestJTable.getValueAt(selectedRow, 0);
      
-        //order.setStatus(2);
+        
         
         ProcessWorkRequestJPanel processWorkRequestJPanel = new ProcessWorkRequestJPanel(userProcessContainer, order,ecosystem);
         userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);

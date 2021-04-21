@@ -13,6 +13,8 @@ import java.util.List;
  * @author harold
  */
 public class DeliveryMan {
+    //define deliveryman information
+    
     private String firstName;
     private String lastName;
     private int id;

@@ -18,7 +18,7 @@ import java.awt.geom.Point2D;
 
 public class Z2 {
 
-    private Arc2D arc; // 这里的弧并不是圆上的一弧，而是椭圆的一部分.
+    private Arc2D arc; // The arc here is not an arc on the circle, but part of the ellipse.
 
     private Area frontSite;
 
@@ -40,7 +40,7 @@ public class Z2 {
 
     private int shadowDepth;
 
-    private double selectedShiftDis; // 被选中的饼图在他的中线上移动的距离
+    private double selectedShiftDis; // The distance the selected pie chart moves over its midline
 
 
     public Z2(Arc2D arc, Color color, double value) {
@@ -128,7 +128,7 @@ public class Z2 {
         arcMiddle = calculateArcMiddle();
 
 
-        // Label position: 五分之四处
+        // Label position: Four fifths
 
         Point2D c = getPieCenter();
 
@@ -143,7 +143,7 @@ public class Z2 {
     }
 
 
-    // 取得Arc上的三个点，在对Arc: center, left, right.
+    //Get three points on ARC，for Arc: center, left, right.
 
     public static Point2D[] getPointsOfArc(Arc2D arc) {
 
@@ -177,7 +177,7 @@ public class Z2 {
 
     private Z2 createSeletecdPie() {
 
-        // 沿中线方向移动selectedShiftDis个单位
+        // Move the selectedShiftdis unit along the center line
 
         Point2D c = getPieCenter();
 
@@ -275,7 +275,7 @@ public class Z2 {
     }
 
 
-    // 弦的中心点
+    // The center point of the string
 
     public Point2D getChordMiddle() {
 
@@ -284,7 +284,7 @@ public class Z2 {
     }
 
 
-    // 饼图的圆心
+    // The center of the pie chart
 
     public Point2D getPieCenter() {
 
@@ -293,7 +293,7 @@ public class Z2 {
     }
 
 
-    // 弧上的中心点
+    // The center point on the arc
 
     public Point2D getArcMiddle() {
 
@@ -304,7 +304,7 @@ public class Z2 {
 
     private Point2D calculateArcMiddle() {
 
-        // 创建一个新的弧，其扩展角度为当前弧的一半
+        // Creates a new arc that extends at half the Angle of the current arc
 
         return new Arc2D.Double(arc.getX(), arc.getY(), arc.getWidth(), arc.getHeight(),
 

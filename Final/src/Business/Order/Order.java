@@ -25,7 +25,19 @@ public class Order {
     private List<Map<Vehicle,Integer>> vehicles;
     private UserAccount customer;
     private double total;
-    //1.待接单 2.已接单待配送 3.在仓库中 4.已出库在运输 5.已完成 6.已拒绝订单 7订单运输失败 8请求入库中 9请求出库中 10 拒绝入库
+    /*
+    1.wait for accepting the order
+    2.accepted and wait for delivering
+    3.in warehouse
+    4. out of storage and be transported
+    5.finished
+    6.refuse the order
+    7.Order shipping failure
+    8.Request for storage
+    9.Request out of storage
+    10.Refuse storage
+    */
+    
     private int status;
     private String comment;
     private Company company;

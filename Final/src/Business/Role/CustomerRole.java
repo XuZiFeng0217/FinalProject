@@ -12,10 +12,6 @@ import userinterface.CustomerRole.CustomerAreaJPanel;
 import javax.swing.JPanel;
 import userinterface.CustomerRole.CustomerAdminJPanel;
 
-/**
- *
- * @author raunak
- */
 public class CustomerRole extends Role{
 
     

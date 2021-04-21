@@ -10,6 +10,8 @@ package Business.Restaurant;
  * @author zzz
  */
 public class Product {
+    // define the product
+    
     private int id;
     private String name;
     private String detail;

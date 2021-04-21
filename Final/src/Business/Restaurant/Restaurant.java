@@ -12,6 +12,9 @@ import java.util.List;
  * @author harold
  */
 public class Restaurant {
+   
+    //define the company information 
+    
     private String name;
     private String address;
     private String manager;

@@ -13,6 +13,8 @@ import java.util.List;
  * @author zzz
  */
 public class Company {
+    //Define company information
+    
     private String name;
     List<Vehicle> vehicleList;
 

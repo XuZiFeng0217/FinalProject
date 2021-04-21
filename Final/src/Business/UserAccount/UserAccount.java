@@ -8,11 +8,10 @@ package Business.UserAccount;
 import Business.Role.Role;
 
 
-/**
- *
- * @author raunak
- */
+
 public class UserAccount {
+   //define useraccount information 
+    
     
     private String username;
     private String password;

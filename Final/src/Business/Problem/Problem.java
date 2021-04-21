@@ -10,6 +10,8 @@ package Business.Problem;
  * @author zzz
  */
 public class Problem {
+    
+    
     private String question;
     private String answer;
     String customer;

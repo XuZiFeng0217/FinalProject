@@ -10,7 +10,7 @@ import java.awt.geom.Point2D;
 
 public class Z1 {
 
-    // 两点之间的距离
+    // distance between two points
 
     public static double distanceOfPoints(Point2D p1, Point2D p2) {
 
@@ -26,7 +26,7 @@ public class Z1 {
     }
 
 
-    // 两点的中点
+    //  the mid-point between two points
 
     public static Point2D middlePoint(Point2D p1, Point2D p2) {
 
@@ -40,7 +40,8 @@ public class Z1 {
     }
 
 
-    // 在两点所在直线上，以从startPoint到endPoint为方向，离startPoint的距离disToStartPoint的点
+    /* The point of the distoStartPoint on the line where the two points are, 
+    in the direction from the startPoint to the endPoint*/
 
     public static Point2D extentPoint(Point2D startPoint, Point2D endPoint, double disToStartPoint) {
 

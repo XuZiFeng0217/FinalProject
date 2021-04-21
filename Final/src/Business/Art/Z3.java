@@ -37,9 +37,9 @@ public class Z3 extends javax.swing.JPanel {
     JPanel userProcessContainer;
     UserAccount account;  
     EcoSystem business;
-    private double[] data; // 在饼图中显示的数据
+    private double[] data; //  the data shows in pie chart
 
-    private Color[] defaultColors; // 预定义饼图的颜色
+    private Color[] defaultColors; //  set color in pie chart firstly
 
     private Z2[] pies;
 
@@ -48,7 +48,7 @@ public class Z3 extends javax.swing.JPanel {
 
     private int shiftAngle = -30;
 
-    private int selectedPieIndex = -1; // 鼠标点击是选中的Arc, -1为没有选中
+    private int selectedPieIndex = -1; // Mouse click is selected ARC, -1 is not selected
 
     
      public Z3(JPanel userProcessContainer, UserAccount account, EcoSystem business) {
@@ -117,12 +117,12 @@ public class Z3 extends javax.swing.JPanel {
 
         int w = 380;
 
-        int h = (int) (w * 0.618); // 黄金分割
+        int h = (int) (w * 0.618); // The golden segmentation
 
         pies = createPies(x, y, w, h, shadowDepth, shiftAngle, data, defaultColors);
 
 
-        // 取得鼠标选中的饼图的下标
+        // Gets the subscript of the mouse selected pie chart
 
         addMouseListener(new MouseAdapter() {
 
@@ -155,7 +155,7 @@ public class Z3 extends javax.swing.JPanel {
 
     private Color[] createColors() {
 
-        // 返回16进制的值颜色
+        // Returns the color of a hexadecimal value
 
         List<Color> colors = new ArrayList<Color>();
 
@@ -210,7 +210,7 @@ public class Z3 extends javax.swing.JPanel {
         }
 
 
-        // 初始化Pies
+        // intialize the pies
 
         double arcAngle = 0;
 
@@ -221,11 +221,11 @@ public class Z3 extends javax.swing.JPanel {
 
         for (int i = 0; i < data.length; ++i) {
 
-            arcAngle = data[i] * 360 / sum; // 使用百分比计算角度
+            arcAngle = data[i] * 360 / sum; //  calculate the angles in percent
 
             if (i + 1 == data.length) {
 
-                arcAngle = 360 + shiftAngle - startAngle; // 保证闭合
+                arcAngle = 360 + shiftAngle - startAngle; // Ensure that closed
 
                 arcAngle = arcAngle > 0 ? arcAngle : 0;
 
@@ -268,9 +268,9 @@ public class Z3 extends javax.swing.JPanel {
 
     private void drawPies(Graphics2D g2d, Z2[] pies, int selectedIndex) {
 
-        int startIndex = 0; // 从第几个饼图开始绘制
+        int startIndex = 0; // Start with the number of pie charts
 
-        int endIndex = pies.length; // 要画的饼图的数量.
+        int endIndex = pies.length; // the number of pie charts to draw 
 
         boolean closed = (endIndex - startIndex == pies.length) ? true : false;
 
@@ -279,7 +279,7 @@ public class Z3 extends javax.swing.JPanel {
         FontMetrics metrics = g2d.getFontMetrics();
 
 
-        // 一次性绘制完3D效果，然后再绘制饼图的效果比绘制饼图的同时绘制好
+        // Paint the 3D effect once and then draw the pie at the same time
 
         for (int i = startIndex; i < endIndex; ++i) {
 
@@ -296,7 +296,8 @@ public class Z3 extends javax.swing.JPanel {
         }
 
 
-        // 如果没有闭合时，且选中的不是第一块，则第一块画左面
+        /* If there is no closure, and the first block is not selected,
+        then the first block is drawn to the left*/
 
         if (!closed && selectedIndex != startIndex) {
 
@@ -307,7 +308,8 @@ public class Z3 extends javax.swing.JPanel {
         }
 
 
-        // 如果没有闭合时，且选中的不是最后一块，则最后一块画右面
+        /* If there is no closure, and the last piece is not selected, 
+        then the last piece is drawn to the right*/
 
         if (!closed && selectedIndex + 1 != endIndex) {
 
@@ -318,7 +320,7 @@ public class Z3 extends javax.swing.JPanel {
         }
 
 
-        // 有饼图被选中
+        //  if the pie chart be selected
 
         if (selected) {
 
@@ -327,13 +329,13 @@ public class Z3 extends javax.swing.JPanel {
             int nextIndex = (selectedIndex + 1) >= endIndex ? startIndex : (selectedIndex + 1);
 
 
-            // 前一个画右墙
+            //  the first one to draw the right 
 
             g2d.setColor(pies[prevIndex].getColor().darker());
 
             g2d.fill(pies[prevIndex].getRightSite());
 
-            // 后一个画左墙
+            //  the later one to draw the left
 
             g2d.setColor(pies[nextIndex].getColor().darker());
 
@@ -342,7 +344,7 @@ public class Z3 extends javax.swing.JPanel {
         }
 
 
-        // 最后再绘制饼图的上面部分，把不需要的部分隐藏掉
+        // Finally, draw the top part of the pie chart and hide the unnecessary parts
 
         for (int i = startIndex; i < endIndex; ++i) {
 
@@ -372,7 +374,7 @@ public class Z3 extends javax.swing.JPanel {
         }
 
 
-        // 绘制被选中的饼图
+        // draw the selceted pie chart
 
         if (selected) {
 
@@ -410,12 +412,6 @@ public class Z3 extends javax.swing.JPanel {
 
     private static void createGuiAndShow() {
 
-//        JFrame frame = new JFrame("Pie with 3D Effect");
-//
-//        frame.getContentPane().add(new Z3());
-
-
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         int sw = Toolkit.getDefaultToolkit().getScreenSize().width;
 
@@ -433,9 +429,7 @@ public class Z3 extends javax.swing.JPanel {
 
         y = y > 0 ? y : 0;
 
-//        frame.setBounds(x, y, w, h);
-//
-//        frame.setVisible(true);
+
 
     }
 

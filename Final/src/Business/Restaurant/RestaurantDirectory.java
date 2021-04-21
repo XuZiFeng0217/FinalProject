@@ -7,10 +7,7 @@ package Business.Restaurant;
 
 import java.util.List;
 
-/**
- *
- * @author harold
- */
+
 public class RestaurantDirectory {
     List<Restaurant> restaurantList;
 

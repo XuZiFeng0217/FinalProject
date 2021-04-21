@@ -10,6 +10,8 @@ package Business.Customer;
  * @author harold
  */
 public class Customer {
+    //Define customer information
+    
     private int id;
     private String firstName;
     private String lastName;

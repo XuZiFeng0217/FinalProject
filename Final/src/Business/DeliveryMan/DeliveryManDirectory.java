@@ -7,10 +7,7 @@ package Business.DeliveryMan;
 
 import java.util.List;
 
-/**
- *
- * @author harold
- */
+
 public class DeliveryManDirectory {
     private List<DeliveryMan> deliveryManList;
 

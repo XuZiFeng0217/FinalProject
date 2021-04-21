@@ -10,6 +10,8 @@ package Business.Vehicle;
  * @author zzz
  */
 public class Vehicle {
+    //define vehicle information 
+    
     private String name;
     private double price;
     private double size;
