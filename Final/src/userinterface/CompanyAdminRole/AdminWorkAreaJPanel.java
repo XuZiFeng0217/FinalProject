@@ -57,8 +57,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(254, 102, 0));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        userJButton.setBackground(new java.awt.Color(221, 74, 37));
-        userJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        userJButton.setBackground(new java.awt.Color(0, 102, 102));
+        userJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         userJButton.setForeground(new java.awt.Color(51, 51, 51));
         userJButton.setText("View Comments");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -66,21 +66,21 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 800, 190, 30));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 780, 190, -1));
 
         manageEmployeeJButton.setBackground(new java.awt.Color(68, 118, 244));
-        manageEmployeeJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        manageEmployeeJButton.setForeground(new java.awt.Color(153, 0, 51));
+        manageEmployeeJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        manageEmployeeJButton.setForeground(new java.awt.Color(51, 51, 51));
         manageEmployeeJButton.setText("Manage menu");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 800, 190, 30));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 780, 190, -1));
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(81, 119, 97));
-        manageOrganizationJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        manageOrganizationJButton.setBackground(new java.awt.Color(255, 96, 102));
+        manageOrganizationJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         manageOrganizationJButton.setForeground(new java.awt.Color(51, 51, 51));
         manageOrganizationJButton.setText("Manage Orders");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -88,21 +88,21 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 800, 190, 30));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 780, 190, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, 120, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, 120, 30));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel3.setText("Manage company information");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, -1, -1));
 
-        enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         enterpriseLabel1.setText("Company :");
-        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, 120, 30));
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 120, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/company.gif"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 810, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 810, 600));
     }// </editor-fold>//GEN-END:initComponents
 
     private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed

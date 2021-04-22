@@ -9,7 +9,7 @@ import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Order.Order;
 import Business.Problem.Problem;
 
-import Business.Role.AdminRole;
+import Business.Role.AdminDataRole;
 import Business.Role.CompanyAdminRole;
 import Business.Role.CompanyDataRole;
 import Business.Role.CustomerRole;
@@ -17,6 +17,7 @@ import Business.Role.DeliverManRole;
 import Business.Role.ServiceRole;
 import Business.Role.SystemAdminRole;
 import Business.Role.WareHouseAdminRole;
+import Business.Role.WareHouseDataRole;
 import Business.UserAccount.UserAccount;
 import Business.Vehicle.Vehicle;
 import Bussiness.Warehouse.WareHouse;
@@ -49,7 +50,7 @@ public class ConfigureASystem {
         UserAccount uaCustomer1 = system.getUserAccountDirectory().createUserAccount("c1", "123", new CustomerRole());
         UserAccount uaCustomer2 = system.getUserAccountDirectory().createUserAccount("c2", "123", new CustomerRole());
         
-        //设置餐厅经理账户
+       
         
         UserAccount company1 = system.getUserAccountDirectory().createUserAccount("SF", "123", new CompanyAdminRole());
         UserAccount company2 = system.getUserAccountDirectory().createUserAccount("EXPRESS", "123", new CompanyAdminRole());
@@ -67,10 +68,19 @@ public class ConfigureASystem {
         
         //设置公司数据管理员
         UserAccount cd1 = system.getUserAccountDirectory().createUserAccount("cd1", "123", new CompanyDataRole());
+        UserAccount cd2 = system.getUserAccountDirectory().createUserAccount("cd2", "123", new CompanyDataRole());
+        UserAccount cd3 = system.getUserAccountDirectory().createUserAccount("cd3", "123", new CompanyDataRole());
+        //初始化系统数据管理员
+        UserAccount ad1 = system.getUserAccountDirectory().createUserAccount("ad1", "123", new AdminDataRole());
+        //初始化仓库数据管理员
+        UserAccount wd1 = system.getUserAccountDirectory().createUserAccount("wd1", "123", new WareHouseDataRole());
+        UserAccount wd2 = system.getUserAccountDirectory().createUserAccount("wd2", "123", new WareHouseDataRole());
+        UserAccount wd3 = system.getUserAccountDirectory().createUserAccount("wd3", "123", new WareHouseDataRole());
+        
         //初始化customer数据
         Customer c1 = new Customer(1,"Jack","Smith");
-        Customer c2 = new Customer(2,"Jack","Smith");
-        Customer c3 = new Customer(3,"Jack","Smith");
+        Customer c2 = new Customer(2,"Lily","Frank");
+        Customer c3 = new Customer(3,"John","Hopkins");
         uaCustomer1.setAddress("Hanjiang Road");
         CustomerDirectory customers = new CustomerDirectory();
         List<Customer> customerList = new ArrayList<Customer>();
@@ -81,9 +91,9 @@ public class ConfigureASystem {
         system.setCustomerDirectory(customers);
         
         //初始化DeliveryMan数据
-        DeliveryMan man1 = new DeliveryMan(1,"d1","Smith");
-        DeliveryMan man2 = new DeliveryMan(2,"d2","kally");
-        DeliveryMan man3 = new DeliveryMan(3,"d3","wood");
+        DeliveryMan man1 = new DeliveryMan(1,"d1","");
+        DeliveryMan man2 = new DeliveryMan(2,"d2","");
+        DeliveryMan man3 = new DeliveryMan(3,"d3","");
         DeliveryManDirectory deliveryManDirectory = new DeliveryManDirectory();
         List<DeliveryMan> deliveryManList = new ArrayList<DeliveryMan>();
         List<Order> ordersDelivery = new ArrayList<>();
