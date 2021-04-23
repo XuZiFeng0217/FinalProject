@@ -53,14 +53,17 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         customerBtn = new javax.swing.JButton();
         deliveryBtn = new javax.swing.JButton();
+        manageAccountBtn = new javax.swing.JButton();
 
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setBackground(new java.awt.Color(254, 102, 0));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Administor.jpg"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(255, 132, 25));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(255, 255, 51));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("View Company");
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -69,9 +72,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        customerBtn.setBackground(new java.awt.Color(255, 206, 163));
-        customerBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        customerBtn.setForeground(new java.awt.Color(255, 255, 255));
+        customerBtn.setBackground(new java.awt.Color(255, 51, 51));
+        customerBtn.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        customerBtn.setForeground(new java.awt.Color(51, 51, 51));
         customerBtn.setText("View Customer");
         customerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,9 +82,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        deliveryBtn.setBackground(new java.awt.Color(204, 204, 204));
-        deliveryBtn.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        deliveryBtn.setForeground(new java.awt.Color(255, 132, 25));
+        deliveryBtn.setBackground(new java.awt.Color(0, 51, 255));
+        deliveryBtn.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        deliveryBtn.setForeground(new java.awt.Color(51, 51, 51));
         deliveryBtn.setText("View WareHouse");
         deliveryBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,35 +92,47 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        manageAccountBtn.setBackground(new java.awt.Color(255, 255, 255));
+        manageAccountBtn.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        manageAccountBtn.setForeground(new java.awt.Color(255, 132, 25));
+        manageAccountBtn.setText("Manage Account");
+        manageAccountBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                manageAccountBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(74, 74, 74)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(165, 165, 165)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(customerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(deliveryBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(151, 151, 151)
+                    .addComponent(deliveryBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                    .addComponent(customerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                    .addComponent(manageAccountBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(108, 108, 108)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(208, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(127, 127, 127)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addComponent(jButton1)
-                        .addGap(38, 38, 38)
+                        .addGap(50, 50, 50)
                         .addComponent(customerBtn)
-                        .addGap(41, 41, 41)
-                        .addComponent(deliveryBtn)))
-                .addContainerGap(169, Short.MAX_VALUE))
+                        .addGap(72, 72, 72)
+                        .addComponent(jButton1)
+                        .addGap(81, 81, 81)
+                        .addComponent(deliveryBtn)
+                        .addGap(78, 78, 78)
+                        .addComponent(manageAccountBtn)))
+                .addContainerGap(257, Short.MAX_VALUE))
         );
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -146,6 +161,14 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_deliveryBtnActionPerformed
 
+    private void manageAccountBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageAccountBtnActionPerformed
+        // TODO add your handling code here:
+        ManageAccountJPanel maj = new ManageAccountJPanel(userProcessContainer,ecosystem);
+        userProcessContainer.add("maj", maj);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_manageAccountBtnActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton customerBtn;
@@ -154,5 +177,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton manageAccountBtn;
     // End of variables declaration//GEN-END:variables
 }

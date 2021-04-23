@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/companyDataRole/DataWorkArea.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/CompanyAdminRole/ManageMenuJPanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/SystemAdminWorkArea/ManageCustomerJPanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/CustomerRole/CustomerAdminJPanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/CompanyAdminRole/ManageOrderJPanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/SystemAdminWorkArea/ManageCompanyJpanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/CompanyAdminRole/ManageInfoJPanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/SystemAdminWorkArea/SystemAdminWorkAreaJPanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/userinterface/SystemAdminWorkArea/ManageDeliveryManJPanel.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/Business/Company/Company.java</file>
-            <file>file:/C:/Users/zzz/Desktop/final/FinalProject-main/Final/src/Business/Role/AdminDataRole.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
