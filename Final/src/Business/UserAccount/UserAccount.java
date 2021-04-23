@@ -19,6 +19,7 @@ public class UserAccount {
    
     private Role role;
     private String address;
+    private String phone;
 
     public String getAddress() {
         return address;
@@ -52,6 +53,16 @@ public class UserAccount {
     public Role getRole() {
         return role;
     }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    
+    
 
 
 

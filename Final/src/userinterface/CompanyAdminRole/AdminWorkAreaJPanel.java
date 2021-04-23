@@ -60,35 +60,38 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         userJButton.setBackground(new java.awt.Color(0, 102, 102));
         userJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         userJButton.setForeground(new java.awt.Color(51, 51, 51));
+        userJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/列表.png"))); // NOI18N
         userJButton.setText("View Comments");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 780, 190, -1));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 760, 200, 50));
 
         manageEmployeeJButton.setBackground(new java.awt.Color(68, 118, 244));
         manageEmployeeJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         manageEmployeeJButton.setForeground(new java.awt.Color(51, 51, 51));
+        manageEmployeeJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/订单.png"))); // NOI18N
         manageEmployeeJButton.setText("Manage menu");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 780, 190, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 760, 200, 50));
 
         manageOrganizationJButton.setBackground(new java.awt.Color(255, 96, 102));
         manageOrganizationJButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         manageOrganizationJButton.setForeground(new java.awt.Color(51, 51, 51));
+        manageOrganizationJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/货物管理.png"))); // NOI18N
         manageOrganizationJButton.setText("Manage Orders");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 780, 190, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 760, -1, 50));
 
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, 120, 30));

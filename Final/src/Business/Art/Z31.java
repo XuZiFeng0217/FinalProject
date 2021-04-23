@@ -458,8 +458,14 @@ public class Z31 extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(254, 102, 0));
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel1.setText("Brown: d2    Yellow: d1   Green: d3");
 
+        backJButton.setBackground(new java.awt.Color(0, 51, 255));
+        backJButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(51, 51, 51));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -472,20 +478,20 @@ public class Z31 extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(backJButton)
-                .addGap(18, 18, 18)
+                .addGap(44, 44, 44)
+                .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel1)
-                .addContainerGap(430, Short.MAX_VALUE))
+                .addContainerGap(332, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(backJButton))
-                .addContainerGap(538, Short.MAX_VALUE))
+                    .addComponent(backJButton)
+                    .addComponent(jLabel1))
+                .addContainerGap(536, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
